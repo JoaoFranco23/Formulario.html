@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+       .fa-toilet-paper{
+        display: flex; 
+        font-family: Arial; 
+        align-items: center; 
+        flex-direction: column; 
+        font-size: 20pt; 
+        color: black;  
+        text-shadow: 2px 2px 2px darkred;
+       }
+       .material-symbols-outlined{
+        display: flex;
+        font-variation-settings: 'fill' 0, 'wght' 400, ' grad'0,' 'opsz' 0, '; 
+        display: inline;
+        font-size: 25px;
+       }
+       .Nome{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        offset-distance: normal;
+        height: 30px;
+        -webkit-flex-direction: inline-flex;
+        word-spacing: 20px;
+       }
+       .Email{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        offset-distance: normal;
+        border: 10px;
+        height: 30px;
+        -webkit-flex-direction: inline-flex;
+        word-spacing: 20px;
+        padding: 0px;
+        font-size: 40px;
+       }
+       /*O atributo inserido aumenta o card texto inserido*/
+       input[type="text"]{
+        width: 353px;
+       }
+       input[type="area"]{
+        display: inline-flex;
+        width: 30px;
+        border-radius: 10px;
+       }
+       input[type="Tel"],
+       .Telephone{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        width: 120px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1px;
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body>
+    <h1 class="fa-toilet-paper">INFORMAÇÕES PESSOAIS</h1>
+    <from method="get" action="#"> <!--O atributo será responsavel por definir aonde será enviado os dados cadastrados-->
+        <fieldset> <!--Margem que sera utilizado no formulario de cadastro-->
+            <div class="Nome">
+                <span class="material-symbols-outlined">badge</span>
+                <input type="card-text" class="card-text" name="nome" placeholder="Digite o Primeiro Nome" aria-placeholder="cv-input-text" spellcheck="true" autocomplete="additional-name">
+                <input type="card-text" class="sobre-nome" name="sobrenome" placeholder="Digite o Sobrenome" aria-placeholder="cv-input-text" spellcheck="false" aria-autocomplete="off">
+            </div>
+            <div class="Email">
+                <span class="material-symbols-outlined">mail</span>
+                <input type="text" name="email" placeholder="Digite Seu Email" required maxlength="45">
+            </div>
+            <div class="Telephone">
+                <span class="material-symbols-outlined">call</span>
+                <label for="DDD"></label>
+                    <input type="area" class="DDD" id="area" placeholder="00" required maxlength="2"></input>
+                    <input type="Tel" id="phone" placeholder="00000-0000" name="phone-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10" required="" />
+            </div>
+            <div class="Calendario">
+                <span class="material-symbols-outlined">calendar_month</span>
+                <input type="date" autocomplete="off" id="calendar_month" name="data-sitekey" class="cv-input-data validate[required] cv-campo-obrigatorio" size="12" mascara="DD/MM/YYYY" maxlength="12" field="date">
+                <input type="idade" id="idade" autocomplete="off" class="cv-input-age validate[required] cv-campo-obrigatorio" placeholder="Digite Sua Idade" field="age"> 
+                <script>
+                    document.getElementById("datapicker").addEventListener("change", function(){
+                        alert("selected date: " + this.values);
+                    })
+                </script>
+                <div class="Genero">
+                    <span class="material-symbols-outlined">wc</span>
+                    <select id="gender" autocomplete="off" name="gander" class="cv-Gennder cv-select validate[required] cv-campo-obrigatorio" field="TIPSEX" required="required">
+                        <option placeholder="Selecione o seu genero" value="">Selecione seu Genero</option>
+                        <option value="F">Feminino</option>
+                        <option value="M">Masculino</option> 
+                    </select>
+                </div>
+                <div class="Endeco">
+                    <span class="material-symbols-outlined">home</span>
+                    <input type="text" name="endereco" placeholder="Digite seu Endereço" aria-placeholder="cv-input-text" spellcheck="false" aria-autocomplete="off">
+                    <input type="number" id="number" placeholder="Digite o Numero da Resicencia" spellcheck="true" aria-autocomplete="off">
+                </div>
+                <div class="Estado-Civil">
+                    <span class="material-symbols-outlined">join_inner</span>
+                    <select id="matrimonio" autocomplete="off" name="matrimonio" class="cv-mirrage cv-select validate[required] cv-campo-obrigatorio" required="select">
+                        <option placeholder="selected-marriage" value="">Estado-Civil</option>
+                        <option value="C">Casado</option>
+                        <option value="C">concubinato</option>
+                        <option value="D">Divorciado</option>
+                        <option value="S">Separado</option>
+                        <option value="S">Solteiro</option>
+                        <option value="U">União Estável</option>
+                        <option value="V">Viúvo</option>
+                    </select>                       
+                </div>
+            </div>
+            <div class="Estado">
+                <span class="material-symbols-outlined">flag</span>
+                <select class="state" name="state" autocomplete="off" required="cv-select">
+                    <option value="" selected="">Selecione o Estado*</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div class="Cidade">
+                <span class="material-symbols-outlined">location_away</span>
+                <select class="city" name="city" autocomplete="off" required="cv-select">
+                    <option value="" selected="">Selecione a Cidade*</option> 
+                            <option class="Ac" value="Acre">Rio Branco</option> 
+                            <option class="Ac" value="Acre">Cruzeiro do Sul</option>
+                            <option class="Ac" value="Acre">Sena Madureira</option>
+                            <option class="Ac" value="Acre">Taruacá</option>
+                            <option class="Ac" value="Acre">Feijó</option> 
+                            <option class="AL" value="Alagoas">Maceió</option>
+                            <option class="AL" value="Alagoas">Arapiraca</option>
+                            <option class="AL" value="Alagoas">Estrela de Alagoas</option>
+                            <option class="AL" value="Alagoas">Rio Largo</option>
+                            <option class="AL" value="Alagoas">União dos Palmares</option>
+                            <option class="Ap" value="Amapá">Macapá</option>
+                            <option class="Ap" value="Amapá">Santana</option>
+                            <option class="Ap" value="Amapá">Oiapoque</option>
+                            <option class="Ap" value="Amapá">Porto Grande</option>
+                            <option class="Ap" value="Amapá">Vitória do Jari</option>
+                            <option class="AM" value="Amazonas">Manaus</option>
+                            <option class="AM" value="Amazonas">Itacoatira</option>
+                            <option class="AM" value="Amazonas">Manicoré</option>
+                            <option class="AM" value="Amazonas">Humaitá</option>
+                            <option class="AM" value="Amazonas">Autazes</option> 
+                            <option class="BA" value="Bahia">Salvador</option>
+                            <option class="BA" value="Bahia">Feira de Santana</option>
+                            <option class="BA" value="Bahia">Vitória da Conquista</option>
+                            <option class="BA" value="Bahia">Barreiras</option>
+                            <option class="BA" value="Bahia">Porto Seguro</option>
+                            <option class="CE" value="Ceará">Fortaleza</option>
+                            <option class="CE" value="Ceará">Aracati</option>
+                            <option class="CE" value="Ceará">Aracaju</option>
+                            <option class="CE" value="Ceará">Sobral</option>
+                            <option class="CE" value="Ceará">Crato</option>
+                            <option class="DF" value="Distrito Federal">Brasilia</option>
+                            <option class="ES" value="Espirito Santo">Serra</option>
+                            <option class="ES" value="Espirito Santo">Vila Velha</option>
+                            <option class="ES" value="Espirito Santo">Vitória</option>
+                            <option class="ES" value="Espirito Santo">Linhares</option>
+                            <option class="ES" value="Espirito Santo">São Mateus</option>
+                            <option class="GO" value="Goiás">Goiánia</option>
+                            <option class="GO" value="Goiás">Anápolis</option>
+                            <option class="GO" value="Goiás">Rio Verde</option>
+                            <option class="GO" value="Goiás">Água Lindas de Goiás</option>
+                            <option class="GO" value="Goiás">Trindade</option>
+                            <option class="MA" value="Maranhão">Caxias</option>
+                            <option class="MA" value="Maranhão">Imperatriz</option>
+                            <option class="MA" value="Maranhão">Açailândia</option>
+                            <option class="MA" value="Maranhão">Timon</option>
+                            <option class="MA" value="Maranhão">Codó</option>
+                            <option class="MT" value="Mato Grosso">Diamantino</option>
+                            <option class="MT" value="Mato Grosso">Comodoro</option>
+                            <option class="MT" value="Mato Grosso">Vila Rica</option>
+                            <option class="MT" value="Mato Grosso">Campo Novo do Norte</option>
+                            <option class="MT" value="Mato Grosso">Juara</option><option value="MS">Mato Grosso do Sul</option>
+                            <option class="MG" value="Minas Gerais">Belo Horizonte</option>
+                            <option class="MG" value="Minas Gerais">Uberlândia</option>
+                            <option class="MG" value="Minas Gerais">Ipatinga</option>
+                            <option class="MG" value="Minas Gerais">Sete Lagoas</option>
+                            <option class="MG" value="Minas Gerais">Paraguaçu</option>
+                            <option class="PA" value="Pará">Belém</option>
+                            <option class="PA" value="Pará">Santarém</option>
+                            <option class="PA" value="Pará">Marabá</option>
+                            <option class="PA" value="Pará">Castanhal</option>
+                            <option class="PA" value="Pará">Ananindeua</option>
+                            <option class="PB" value="Paraíba">Aparecida</option>
+                            <option class="PB" value="Paraíba">Amparo</option>
+                            <option class="PB" value="Paraíba">Bananeiras</option>
+                            <option class="PB" value="Paraíba">Barra de São Miguel</option>
+                            <option class="PB" value="Paraíba">Barra de Santana</option>
+                            <option class="PR" value="Paraná">Curitiba</option>
+                            <option class="PR" value="Paraná">Londrina</option>
+                            <option class="PR" value="Paraná">Maringa</option>
+                            <option class="PR" value="Paraná">Ponta Grossa</option>
+                            <option class="PR" value="Paraná">São José dos Pinhais</option>
+                            <option class="PE" value="Pernambuco">Recife</option>
+                            <option class="PE" value="Pernambuco">Olinda</option>
+                            <option class="PE" value="Pernambuco">Petrolina</option>
+                            <option class="PE" value="Pernambuco">Petrolina</option>
+                            <option class="PE" value="Pernambuco">Camaragibe</option>
+                            <option class="PI" value="Piauí">Parnaiba</option>
+                            <option class="PI" value="Piauí">Picos</option>
+                            <option class="PI" value="Piauí">Floriano</option>
+                            <option class="PI" value="Piauí">Barras</option>
+                            <option class="PI" value="Piauí">União</option>
+                            <option class="RJ" value="Rio de Janeiro">Angra dos Reis</option>
+                            <option class="RJ" value="Rio de Janeiro">Arraial do Cabo</option>
+                            <option class="RJ" value="Rio de Janeiro">Barra Mansa</option>
+                            <option class="RJ" value="Rio de Janeiro">Bom Jesus do Itabapoana</option>
+                            <option class="RJ" value="Rio de Janeiro">Cabo Frio</option>
+                            <option class="RN" value="Rio Grande do Norte">Natal</option>
+                            <option class="RN" value="Rio Grande do Norte">Parnamirim</option>
+                            <option class="RN" value="Rio Grande do Norte">Natal</option>
+                            <option class="RN" value="Rio Grande do Norte">Ceará Mirim</option>
+                            <option class="RN" value="Rio Grande do Norte">Assu</option>
+                            <option class="RS" value="Rio Grande do Sul">Porto Alegre</option>
+                            <option class="RS" value="Rio Grande do Sul">Caxias do Sul</option>
+                            <option class="RS" value="Rio Grande do Sul">Santa Maria</option>
+                            <option class="RS" value="Rio Grande do Sul">Novo Hamburgo</option>
+                            <option class="RS" value="Rio Grande do Sul">Canoas</option>
+                            <option class="RO" value="Rondônia">Porto Velho</option>
+                            <option class="RO" value="Rondônia">Guajará Mirim</option>
+                            <option class="RO" value="Rondônia">Vilhena</option>
+                            <option class="RO" value="Rondônia">São Francisco do Guaporé</option>
+                            <option class="RO" value="Rondônia">Pimenta Bueno</option>
+                            <option class="RR" value="Roraima">Boa Vista</option>
+                            <option class="RR" value="Roraima">Rorainópolis</option>
+                            <option class="RR" value="Roraima">Alto Alegre</option>
+                            <option class="RR" value="Roraima">Mucajai</option>
+                            <option class="RR" value="Roraima">Pacaraima</option>
+                            <option class="SC" value="Santa Catarina">Alto Bela Vista</option>
+                            <option class="SC" value="Santa Catarina">Água Doce</option>
+                            <option class="SC" value="Santa Catarina">Arvoredo</option>
+                            <option class="SC" value="Santa Catarina">Águas de Chapecó</option>
+                            <option class="SC" value="Santa Catarina">Anchieta</option>
+                            <option class="SP" value="São Paulo">São Paulo</option>
+                            <option class="SP" value="São Paulo">Adamantina</option>
+                            <option class="SP" value="São Paulo">SÃO BERNARDO DO CAMPO</option>
+                            <option class="SP" value="São Paulo">RIBEIRÃO PRETO</option>
+                            <option class="SP" value="São Paulo">SÃO JOSÉ DOS CAMPOS</option>
+                            <option class="SE" value="Sergipe">Amparo de São Francisco</option>
+                            <option class="SE" value="Sergipe">Aquidabã</option>
+                            <option class="SE" value="Sergipe">Aracaju</option>
+                            <option class="SE" value="Sergipe">Areia Branca</option>
+                            <option class="SE" value="Sergipe">Barra dos Coqueiros</option>
+                            <option class="TO" value="Tocantins">PALMAS</option>
+                            <option class="TO" value="Tocantins">ARAGUAÍNA</option>
+                            <option class="TO" value="Tocantins">ARAGUATINS</option>
+                            <option class="TO" value="Tocantins">GURUPI</option>
+                            <option class="TO" value="Tocantins">GUARAÍ</option>
+                </select> 
+            </div>
+        </fieldset>
+        <h2 class="fa-toilet-paper">Documentação</h2>
+        <fieldset>
+            <form name="document">
+                <span class="material-symbols-outlined">clinical_notes</span>
+                <input type="cnh" id="cv-campo-cnh" name="cnh" class="cv-campo-cnh validate[required] cv-campo-obrigatorio" size="11" placeholder="Nº de Registro cnh" maxlength="11"> 
+                <input type="document" id="number-document" name="rg" placeholder="Nº RG" spellcheck="true" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o RG no formato: xx.xxx.xxx.x">
+                <input type="document" id="number-cpf" name="cpf" placeholder="Nº CPF" spellcheck="true" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite o CPF no formato: xxx.xxx.xxx-xx">
+            </form>
+            <form class="work card">
+                <span class="material-symbols-outlined">contact_page</span>
+                <input type="text" id="number-document" name="Cart_Trab" class="cv-campo cv-input-text" placeholder="Nº Carteira Trabalho" spellcheck="true" maxlength="6"> 
+                <select class="state" name="state" autocomplete="off" required="cv-select">
+                    <option value="" selected="">Estado Ógão Emissor</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select> 
+            </form>
+            <div class="from-cat">
+                <span class="material-symbols-outlined">background_replace</span>
+                <input type="text" id="number" name="CNH" placeholder="CNH Nº Registro" maxlength="11" spellcheck="true" title="definir: CNH">
+                <select type="option-text" name="cat" autocomplete="off" required="selected">
+                    <option value="" selected="">Categoria</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="B,A">B,A</option>
+                </select>
+            </div>
+        </fieldset>
+        <h3 class="fa-toilet-paper">Formação Academica</h3>
+        <fieldset>
+            <div class="escolaridade">
+                <span class="material-symbols-outlined">school</span>
+                <select id="escolaridade" name="escolaridade" class="validate[required]">
+                    <option value="" selected="select">Formação Academica</option>
+                    <option value="1º grau Completo">1º grau Completo</option>
+                    <option value="1º grau Incompleto">1º grau Incompleto</option>
+                    <option value="2º grau Completo">2º grau Completo</option>
+                    <option value="2º grau Incompleto">2º grau Incompleto</option>
+                    <option value="Superior Completo">Superior Completo</option>
+                    <option value="Superior Incompleto">Superior Incompleto</option>
+                </select>
+            </div>
+        </fieldset>
+        <h4 class="fa-toilet-paper">Cursos Extra Curriculares</h4>
+        <fieldset>
+            <div class="text-area">
+                <input type="text-area" name="objetivo" required maxlength="2000" placeholder="Quais são seus objetivos dentro da empresa">
+            </div>
+        </fieldset>
+        <h5 class="fa-toilet-paper">Objetivo</h5>
+        <fieldset>
+            <div class="text-area">
+                <input type="text-area" name="objetivo" required maxlength="2000" placeholder="Quais são seus objetivos dentro da empresa">
+            </div>
+        </fieldset>
+        <h6 class="fa-toilet-paper">Experiencia</h6>
+        <fieldset>
+            <div class="work">
+                <span class="material-symbols-outlined">business_center</span>
+                <input class="cv-input-text validate[required] cv-campo-obrigatorio" type="text-arera" name="trabalhou" placeholder="Nome da empresa que trabalhou">
+            </div>
+            <div class="bi-phone">
+                <span class="material-symbols-outlined">call</span>
+                <input type="Tel" id="phone" placeholder="(00)00000-0000" name="phone-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="12" required="" />
+            </div>
+            <script>
+                function alertText(){
+                    document.getElementById('bi-phone');
+                    alert("Telefone da empresa que Trabalha(ou)");
+                }
+            </script>
+            <div class="city-item">
+                <span class="material-symbols-outlined">location_city</span>
+                <input class="cv-input-city validate[required] cv-campo-obrigatorio" type="text" id="city-location" placeholder="Cidade">
+                <input class="cv-input-city validate[required] cv-campo-obrigatorio" type="text" placeholder="Estado">
+            </div>
+            <div class="experiencia">
+                    <span class="material-symbols-outlined">date_range</span>
+                    <label data-="-webkit-calendar-picker-indicator"></label>
+                    <input type="date" autocomplete="off" id="calendar_month" name="data-sitekey" class="cv-input-data validate[required] cv-campo-obrigatorio" size="12" mascara="DD/MM/YYYY" maxlength="12" field="date">
+                    <input for="card-text" type="text" autocomplete="off" id="text_day" name="cargo" class="cv-input-text validate[required] cv-campo-obrigatorio" placeholder="Cargo"></input> 
+                    <input type="val-number" autocomplete="off" character="R$" id="val-number" class="val-number validate[required] cv-campo-obrigatorio" placeholder="Salario"> 
+            </div>
+            <div class="text-area">
+                <input type="text-card" autocomplete="off" id=" text_card" name="function" class="cv-input-text validate[required] cv-campo-obrigatorio" placeholder="Funçao Exercida" rows="20px">
+            </div>
+        </fieldset>
+        <h7 class="fa-toilet-paper">Vaga de Interesse</h7>
+        <fieldset>
+            <form action="select">
+                <select class="vaga-form" name="cargo-form" autocomplete="off" required="select">
+                    <option disabled selected="">Selecione o cargo Pretendido</option>
+                    <option value="Almoxarife">Almoxarife</option>
+                    <option value="Eletricista Industrial">Eletricista Industrial</option>
+                    <option value="Eletricista Automotivo">Eletricista Automotivo</option>
+                    <option value="Caldeireiro Industrial">Caldeireiro Industrial</option>                                            <option value="Técnico Agrícola">Técnico Agrícola</option>
+                    <option value="Encarregado de Produção">Encarregado de Produção</option>
+                    <option value="Analista Ambiental">Analista Ambiental</option>
+                    <option value="Analista de Benefícios">Analista de Benefícios</option>
+                    <option value="Analista de Responsabilidade Social">Analista de Responsabilidade Social</option>
+                    <option value="Analista Desenvolvimento RH">Analista Desenvolvimento RH</option>
+                    <option value="Analista Departamento Pessoal">Analista Departamento Pessoal</option>
+                    <option value="Analista de Laboratório">Analista de Laboratório</option>
+                    <option value="Analista SGQ">Analista SGQ</option>
+                    <option value="Analista Suporte TI">Analista Suporte TI</option>
+                    <option value="Assistente Contábil">Assistente Contábil</option>
+                    <option value="Assistente de Benefícios">Assistente de Benefícios</option>
+                    <option value="Assistente Fiscal">Assistente Fiscal</option>
+                    <option value="Auxiliar Mecânico">Auxiliar Mecânico</option>
+                    <option value="Auxiliar Caldeira">Auxiliar Caldeira</option>
+                    <option value="Auxiliar Departamento Pessoal">Auxiliar Departamento Pessoal</option>
+                    <option value="Balanceiro">Balanceiro</option>
+                    <option value="Borracheiro">Borracheiro</option>
+                    <option value="Caldeireiro de Manutenção de Implementos">Caldeireiro de Manutenção de Implementos</option>
+                    <option value="Coordenador Departamento Pessoal">Coordenador Departamento Pessoal</option>
+                    <option value="Cozinhador">Cozinhador</option>
+                    <option value="Cozinheira">Cozinheira</option>
+                    <option value="Ciência de Dados(Engenharia de Machine Learning)">Ciência de Dados</option>
+                    <option value="Destilador">Destilador</option>
+                    <option value="Enfermagem do Trabalho">Enfermagem do Trabalho</option>
+                    <option value="Engenheiro Agronomo">Engenheiro Agronomo</option>
+                    <option value="Engenheiro Civil">Engenheiro Civil</option>
+                    <option value="Engenheiro Segurança do Trabalho">Engenheiro Segurança do Trabalho</option>
+                    <option value="Faxineira">Faxineira</option>
+                    <option value="Frentista">Frentista</option>
+                    <option value="Guincheiro">Guincheiro</option>
+                    <option value="Instrumentista">Instrumentista</option>
+                    <option value="Mecânico Industrial">Mecânico Industrial</option>
+                    <option value="Mecânico de Máquinas Agrícolas">Mecânico de Máquinas Agrícolas</option>
+                    <option value="Mecânico Moenda">Mecânico Moenda</option>
+                    <option value="Motorista">Motorista</option>
+                    <option value="Operador de Caldeira">Operador de Caldeira</option>
+                    <option value="Operador de Empilhadeira">Operador de Empilhadeira</option>
+                    <option value="Operador de Turbina a Vapor">Operador de Turbina a Vapor</option>
+                    <option value="Pedreiro">Pedreiro</option>
+                    <option value="Piloto Agrícola">Piloto Agrícola</option>
+                    <option value="Recepcionista">Recepcionista</option>
+                    <option value="Serviços de Portaria">Serviços de Portaria</option>
+                    <option value="Soldador Caldeireiro">Soldador Caldeireiro</option>
+                    <option value="Soldador de Moenda">Soldador de Moenda</option>
+                    <option value="Técnico Enfermagem do Trabalho">Técnico Enfermagem do Trabalho</option>                                                <option value="Torneiro Mecânico Industrial">Torneiro Mecânico Industrial</option>
+                    <option value="Tratorista">Tratorista</option>
+                    <option value="Operador de Colhedora">Operador de Colhedora</option>
+                    <option value="Contador">Contador</option>
+                    <option value="Operador Pá Carregadeira">Operador Pá Carregadeira</option>
+                    <option value="Analista Fiscal">Analista Fiscal</option>
+                    <option value="Analista Contábil">Analista Contábil</option>
+                    <option value="Supervisor de Pecuária de Corte">Supervisor de Pecuária de Corte</option>
+                    <option value="Analista de Recursos Humanos">Analista de Recursos Humanos</option>
+                    <option value="Mecânico de Colhedora I">Mecânico de Colhedora I</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Aux. Administrativo - Almoxarifado">Aux. Administrativo - Almoxarifado</option>
+                    <option value="Soldador Industrial">Soldador Industrial</option>
+                    <option value="Soldador Agrícola">Soldador Agrícola</option>
+                    <option value="Jardineiro">Jardineiro</option>
+                    <option value="Auxiliar Geral">Auxiliar Geral</option>
+                    <option value="Operador de Gerador de Energia">Operador de Gerador de Energia</option>
+                    <option value="Controlador de Operações Agrícolas - C.O.A">Controlador de Operações Agrícolas - C.O.A</option>
+                    <option value="Líder">Líder</option>
+                    <option value="Enfermeiro (a)">Enfermeiro (a)</option>
+                    <option value="Operador de Máquinas">Operador de Máquinas</option>
+                    <option value="Auxiliar Agrícola">Auxiliar Agrícola</option>
+                    <option value="Operador de Fábrica de Açúcar">Operador de Fábrica de Açúcar</option>
+                    <option value="Líder de Produção Agrícola">Líder de Produção Agrícola</option>
+                </select>
+            </form> 
+        </fieldset>
+        <h8 class="fa-toilet-pape">Curriculo Pronto</h8>
+        <fieldset>
+            <div class="bi-file"> <!--Atributo é responssavel por selecionar arquivos, sendo pdf ou Documentos-->
+                <input type="file" accept="PDF/document" oncleck="open('preenchimento'), close('envio_anexo'); open('btn_enviar')" value="cv-select">
+                <label for="form-Control-File">Enviar Anexo</label>
+            </div>
+        </fieldset>
+        <h9 class="fa-toilet-paper">Apresentação</h9>
+        <fieldset> <!--Atributo responsavel por anexar video-->
+            <input type="file" id="videoInput" name="videoInput" accept=".mp4.video/webm">
+        </fieldset>
+        <div class="from-check">
+            <input type="checkbox" required name="termos_de_consentimento" class="from-check" id="check-terms-and-consents" value="1">
+            <label class="bi-check-label" for="check-terms-and-consents">
+                Tenho ciência e concordo que meus dados aqui informados poderão ser utilizados pela Empresa de acordo com os termos apresentados no <a target="_blank" href="politica-de-privacidade">Política de Privacidade.</a>               
+            </label>
+        </div> 
+        <div class="button">
+            <button type="button" id="btn_enviar" class="bt-button" onclick="myFunction(), window.Location='#'">ENTRAR</button>
+        </div>
+        <script>
+            function myFunction(){
+                document.getElementById('btn_enviar').enable = true;
+            }
+        </script>
+    </from>
+</body>
+</html>

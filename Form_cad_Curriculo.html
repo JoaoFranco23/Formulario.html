@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="website icon" type="png" href="./linkedin.png"> <!--Atributo adiciona um icone na pagina-->
     <style>
        .fa-toilet-paper{
         display: flex; 
@@ -63,20 +64,44 @@
        }
        input[type="area"]{
         display: inline-flex;
-        width: 30px;
-        border-radius: 10px;
+        width: 40px;
+        border-radius: 12px;
+        height: 18px;
+        font-size: 12px;
        }
        input[type="Tel"],
        .Telephone{
         display: flex;
         display: -webkit-flex;
         justify-content: center;
-        width: 120px;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1px;
+        align-items: center; 
+        flex-wrap: nowrap;
+        offset-distance: normal;
+        border: 10px transparent transparent transparent;
+        height: 20px;
+        -webkit-flex-direction: inline-flex; 
+        word-spacing: 20px;
+        padding: 0px 70px 0;
+       }
+       input[class=Calendario],
+       input[type="date"]{
+        display: inline-flex;
+        width: 109px;
         border-radius: 10px;
        }
+       input[type="idade"],
+       .Calendario{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        offset-distance: normal;
+        -webkit-flex-direction: inline-flex; 
+        word-spacing: 20px;
+        padding: 0px 36px 0;
+       }
+       
+
     </style>
 </head>
 <body>
@@ -96,7 +121,7 @@
                 <span class="material-symbols-outlined">call</span>
                 <label for="DDD"></label>
                     <input type="area" class="DDD" id="area" placeholder="00" required maxlength="2"></input>
-                    <input type="Tel" id="phone" placeholder="00000-0000" name="phone-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10" required="" />
+                    <input type="Tel" class="Telephone" id="phone" placeholder="00000-0000" name="phone-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="10" required="" />
             </div>
             <div class="Calendario">
                 <span class="material-symbols-outlined">calendar_month</span>
@@ -107,6 +132,7 @@
                         alert("selected date: " + this.values);
                     })
                 </script>
+            </div>
                 <div class="Genero">
                     <span class="material-symbols-outlined">wc</span>
                     <select id="gender" autocomplete="off" name="gander" class="cv-Gennder cv-select validate[required] cv-campo-obrigatorio" field="TIPSEX" required="required">
@@ -133,7 +159,6 @@
                         <option value="V">Viúvo</option>
                     </select>                       
                 </div>
-            </div>
             <div class="Estado">
                 <span class="material-symbols-outlined">flag</span>
                 <select class="state" name="state" autocomplete="off" required="cv-select">
@@ -389,7 +414,7 @@
                 <span class="material-symbols-outlined">business_center</span>
                 <input class="cv-input-text validate[required] cv-campo-obrigatorio" type="text-arera" name="trabalhou" placeholder="Nome da empresa que trabalhou">
             </div>
-            <div class="bi-phone">
+            <div class="Telephone">
                 <span class="material-symbols-outlined">call</span>
                 <input type="Tel" id="phone" placeholder="(00)00000-0000" name="phone-contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required maxlength="12" required="" />
             </div>
